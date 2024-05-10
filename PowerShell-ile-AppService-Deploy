@@ -1,0 +1,45 @@
+# Parametreleri tanımlayın
+$subscriptionId = "ID"
+$resourceGroupName = "rg-app-dev"
+$location = "West Europe"
+$hostingPlanName = "ASP-rgappdev-94af"
+$sku = "PremiumV3"
+$workerSize = "Large"
+$numberOfWorkers = 1
+$webAppName = "java8ozan"
+$linuxFxVersion = "JAVA|8-jre8"
+$alwaysOn = $true
+$ftpsState = "FtpsOnly"
+$repoUrl = "https://github.com/EmreOzanMemis/my-spring-app"
+$branch = "master"
+
+# Aboneliği seçin
+Set-AzContext -SubscriptionId $subscriptionId
+
+# Kaynak grubunu kontrol edin ve gerekiyorsa oluşturun
+$resourceGroup = Get-AzResourceGroup -Name $resourceGroupName -ErrorAction SilentlyContinue
+if (-not $resourceGroup) {
+    New-AzResourceGroup -Name $resourceGroupName -Location $location
+}
+
+# App Service Plan oluşturun
+$hostingPlan = New-AzAppServicePlan -Name $hostingPlanName -ResourceGroupName $resourceGroupName -Location $location `
+    -Tier $sku -WorkerSize $workerSize -NumberofWorkers $numberOfWorkers -Linux
+
+# Web App oluşturun
+$webApp = New-AzWebApp -Name $webAppName -ResourceGroupName $resourceGroupName -Location $location `
+    -AppServicePlan $hostingPlanName
+
+# Web App çalışma zamanını ayarlayın
+$properties = @{
+    linuxFxVersion = $linuxFxVersion
+}
+Set-AzWebApp -ResourceGroupName $resourceGroupName -Name $webAppName -AppSettings $properties -AlwaysOn $alwaysOn -FtpsState $ftpsState
+
+# GitHub actin'dan dağıtım yapılandırın
+$deploymentSource = @{
+    repoUrl = $repoUrl
+    branch = $branch
+}
+
+Set-AzWebAppSourceControl -Name $webAppName -ResourceGroupName $resourceGroupName -RepoUrl $repoUrl -Branch $branch -RepositoryType GitHub

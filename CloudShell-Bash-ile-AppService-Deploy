@@ -1,5 +1,5 @@
 # Parametreleri tanımlayın
-subscriptionId="349e9aa3-03a6-4211-8a95-66fefd2c979c"
+subscriptionId="SUBID"
 resourceGroupName="rg-app-dev"
 location="westeurope"  # Lokasyon ismi düzeltildi
 hostingPlanName="ASP-rgappdev-94af"

@@ -40,4 +40,5 @@ Sonuç
 
 Bu script, Azure üzerinde bir Web App oluşturmanın yanı sıra, uygulamanızın sürekli olarak güncel kalmasını sağlamak için GitHub ile entegrasyonu da otomatize eder. Böylece, kod değişiklikleriniz otomatik olarak canlı ortama yansıtılır.
 
-Not: Bu scirpt örnek amaçlıdır. kullanmak istediğinzi işletim sistemi, plan yada runtime seçeneğine göre özelleştirmeniz gerekmektedir. 
+Not-1: Bu scirpt örnek amaçlıdır. kullanmak istediğinzi işletim sistemi, plan yada runtime seçeneğine göre özelleştirmeniz gerekmektedir. 
+Not-2: Deployment sürecinizi kolaylaştırması için örnek bir YAML dosyasıda ekledim. Gerekli düzenlemeleri yaparak CI/CD işlemlerini otomatize edebilirsiniz. 

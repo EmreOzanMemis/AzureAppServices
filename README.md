@@ -47,7 +47,7 @@ Azure App Service kullanarak bir web uygulaması barındırmak için aşağıdak
    GitHub Action kullandığımız için CI/CD sürecini kontrol etmek için GitHub'daki repoma gidiyourm ve Action bölümünü kontrol ediyourm. Yeni bir workflow oluşturdu ve Action Başladımı Kontrol Ediyorum
    ![image](https://github.com/EmreOzanMemis/AzureAppServices/assets/63871298/8c2a0547-056b-4710-ab54-860a51daae49)
 
-   İlgili yml dosyasını incelemek istersniz workflow dizinindne kontrol edebilirsiniz. 
+   İlgili yml dosyasını incelemek ve düzenlemek istersniz workflow dizinindne kontrol edebilirsiniz. (Genelde değişiklik yapmaya gerek kalmayacak şekilde işlem başarı ile tamamlanır)
    ![image](https://github.com/user-attachments/assets/69570686-f395-47cc-80b4-86f276a84daa)
 
 

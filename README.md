@@ -50,10 +50,8 @@ Azure App Service kullanarak bir web uygulaması barındırmak için aşağıdak
    İlgili yml dosyasını incelemek ve düzenlemek istersniz workflow dizinindne kontrol edebilirsiniz. (Genelde değişiklik yapmaya gerek kalmayacak şekilde işlem başarı ile tamamlanır)
    ![image](https://github.com/user-attachments/assets/69570686-f395-47cc-80b4-86f276a84daa)
 
-
    Aynı Kontrol işlemini Azure App Sevices içerisinde oluşturduğumuz Web App'in Overview ekranında sağ alt bölümde bulunan Deploymnet Center detaylarında bulabilirsiniz
    ![image](https://github.com/EmreOzanMemis/AzureAppServices/assets/63871298/bf665759-51a5-4c20-9325-febd4bae8266)
-
 
 2. Uygulama Yayınlama
 
@@ -63,7 +61,7 @@ Azure App Service kullanarak bir web uygulaması barındırmak için aşağıdak
 
 3. Yönetim ve İzleme
 
-   Azure Portal üzerinden uygulamanızın performansını izleyebilir, log kayıtlarına erişebilir ve ölçekleme ayarlarını yönetebilirsiniz.
-   Otomatik ölçeklendirme, yedekleme ve diğer pek çok yönetim özelliğini konfigüre edebilirsiniz.
+   Azure Portal üzerinden uygulamanızın performansını izleyebilir, log kayıtlarına erişebilir ve ölçekleme ayarlarını yönetebilirsiniz. Azure Application Insights, uygulama performansını ve hata izlemeyi sağlayan bir izleme aracını kullanabilrsiniz. 
+   Otomatik ölçeklendirme, yedekleme ve diğer pek çok yönetim özelliğini konfigüre edebilirsiniz. 
 
 Azure App Service, özellikle çeşitli programlama dilleri ve çerçeveleri desteklemesi ve kolay entegrasyon imkanlarıyla geliştiricilere geniş bir esneklik alanı sunar, böylece geliştirme sürecini hızlandırır ve yönetim yükünü azaltır. Bu özellikler, özellikle dinamik uygulamalar ve çoklu dil desteği gerektiren projeler için idealdir.

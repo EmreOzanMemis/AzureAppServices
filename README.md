@@ -39,6 +39,7 @@ Azure App Service kullanarak bir web uygulaması barındırmak için aşağıdak
    ![image](https://github.com/EmreOzanMemis/AzureAppServices/assets/63871298/be000e8e-6ea8-434a-9614-9e9cf55bde0f)
 
 Önemli Not-1: üst bölümde gördüğünüz ekran görüntüsündeki fiyatlar bölgelere göre değişiklik gösterebilir.
+
 Önemli Not-2: üst bölümde gördüğünüz ekran görüntüsünün sağ alt bölümünde bulunan Download a template for automation linki sayesinde mevcut yapılandırma ve seçimleriminizi ARM template halinde sonraki deploy işlemleri kullanabilir. İş süreçlerinizi otomatize edebilirsiniz. 
 
    Deployment ekranını kontrol ediyoruz. Tüm süreçler sorunsuz tamamlandığından emin olunuz.

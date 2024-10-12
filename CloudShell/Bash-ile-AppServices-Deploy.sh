@@ -45,4 +45,4 @@ gittoken="<GitHub token'ınızı girin>" # GitHub token
 az webapp deployment source config --name $webAppName --resource-group $resourceGroupName \
   --repo-url $repoUrl --branch $branch --git-token $gittoken --repository-type github
 
-# Bu komut, GitHub reposuna bir GitHub Actions workflow dosyası ekler ve Azure Web App'ınızla entegre eder
+# Bu komut, GitHub reposuna bir GitHub Actions workflow dosyası ekler ve Azure Web App'ınızla entegre eder. farklı parametreler için syntax yapısını kontrol ediniz
